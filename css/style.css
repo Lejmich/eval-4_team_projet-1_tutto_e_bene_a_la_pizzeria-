@@ -1,0 +1,824 @@
+/* style.css */
+
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Style+Script&display=swap');
+
+/* font-family: "Roboto", sans-serif; */
+
+/* font-family: "Josefin Sans", sans-serif; */
+
+/* font-family: "Style Script", cursive; */
+
+/* Reset de base */
+
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h4, .highlight .color-text {
+    font-family: "Style Script", cursive;
+}
+
+/* Barre séparatrice grise centrée */
+.separator {
+    width: 100%; /* Largeur de la barre séparatrice par rapport à la largeur du conteneur */
+    height: 5px;
+    background-color: #ffb147; /* Gris clair */
+}
+
+/* Header */
+
+/* Styles de base pour le header */
+header {
+    background-color: #f8f9fa;
+}
+
+/* Flexbox pour organiser le contenu du header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #de5e5e;
+}
+
+/* Logo à gauche */
+.logo img {
+    width: 150px; /* Taille du logo */
+    margin: 0.75rem 0 0 5rem;
+}
+
+/* Menu au centre */
+.menu {
+    flex-wrap: nowrap;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-200px); /* Décale le menu vers la gauche */
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: ghostwhite;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: rgb(255, 251, 0);
+}
+
+/* Bouton "Nous contacter" */
+.cta-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 2rem ;
+    text-decoration: none;
+    background-color: #fff8e5;
+    color: #df5e5e;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #ffbb48;
+}
+
+
+/* Stylisation générale */
+main {
+    text-align: center; /* Centre tout le contenu à l’intérieur du conteneur main */
+}
+
+/* h1 stylisé */
+h1 {
+    color: #59434c;
+    font-size: 3rem; /* Ajuste la taille si besoin */
+    margin: 0;
+}
+
+/* h2 stylisé et chevauchement */
+main h2 {
+    color: #de5e5e;
+    font-size: 2.5rem; 
+    margin: -2.3rem auto 5px 2.5%; /* Chevauchement avec un margin-top négatif */
+}
+
+/* Centrer l'image */
+.center-image {
+    display: block;
+    margin: 0 auto; /* Centre l’image */
+    margin-top: 10px; /* Ajuste l’espace entre le h2 et l’image */
+    margin-bottom: 20px;
+    max-width: 100px; /* Ajuste la taille de l’image si nécessaire */
+}
+
+
+/* Slider Cards */
+
+/* Conteneur principal pour aligner les cartes et les flèches */
+.slider-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+/* Style des cartes */
+.card {
+    background-color:#fff8e5;
+    flex: 1;
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style pour le titre des cartes */
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Texte dans les cartes */
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Bouton "Lire la suite" */
+.more {
+    padding: 10px 20px;
+    background-color: #06a19d;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more:hover {
+    background-color: #c0392b;
+}
+
+/* Flèches du slider */
+.arrow {
+    font-size: 3em;
+    cursor: pointer;
+    color: #06a19d;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* A propos */
+
+.about {
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: space-between; /* Sépare le texte et l'image à gauche et à droite */
+    align-items: center; /* Centre verticalement l'image par rapport aux éléments de gauche */
+    background-color: #df5e5e;
+    clip-path: polygon(0.33% 2.51%, 8.29% 0%, 17.6% 0%, 23.46% 0.9%, 28.18% 5.01%, 32.7% 12.04%, 37.21% 17.01%, 41.72% 21.99%, 45.25% 20.86%, 55.83% 8.51%, 63.67% 3.15%, 
+    71.64% 0%, 74.45% 0%, 77.49% 0%, 85.41% 3.38%, 91.15% 8.23%, 96.23% 15.74%, 100% 28.41%, 100% 100%, 0% 100%);
+    height: 500px;
+    padding: 100px 0 0;
+}
+
+/* import CSS Clip Path Generator  */
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre verticalement les éléments de gauche */
+    max-width: 60%; /* Limite la largeur du contenu texte */
+}
+
+/* Styles pour le h2 */
+
+.text-content h2 {
+    color: ghostwhite;
+    text-align: left; /* Alignement à gauche */
+    margin-left: 12rem;
+}
+
+.text-content span {
+    margin-left: 6rem;
+}
+
+/* Styles pour l'article */
+
+.text-content article {
+    color: #fff8e5;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: auto;
+    margin: 2rem 0 2rem 3rem;
+}
+
+/* Bouton "En savoir plus" */
+
+.text-content .read-more {
+    background-color: #fff8e5;
+    color: #df5e5e;
+    border: none;
+    padding: 10px;
+    margin: 0 20rem 0 20rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Conteneur de l'image */
+.image-content {
+    display: flex;
+    align-items: center; /* Centre l'image à mi-hauteur des 3 éléments de gauche */
+    padding-bottom: 5rem;
+}
+
+/* Image du profil */
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid #df5e5e;
+    box-shadow: 0 0 0 6px snow;
+    object-fit: cover;
+    margin-right: 12rem;
+}
+
+
+/* Découvrez notre carte */
+
+.discovery {
+    width: 100vw; /* Pleine largeur de la fenêtre */
+    background: url(../assets/background/Background_discovery.png) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0; /* Enlève les marges */
+    box-sizing: border-box; /* Assure que padding et border sont inclus dans la largeur */
+}
+
+.discover-card {
+    flex-direction: inherit; /* Dispose les éléments verticalement */
+    width: 100%; /* Ajuste la largeur maximum de la carte */
+}
+
+
+.textuel-content article{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 1rem;
+    margin: 0 6rem 2rem;
+} 
+    
+
+.textuel-content .read-more-card {
+    background-color: #df5e5e;
+    color:  #fff8e5;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin: 0 10rem 0 10rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Style pour le haut du contenu */
+.content-top {
+    display: flex;
+    justify-content: flex-end; /* Pousse les éléments vers la droite */
+    position: relative; /* Nécessaire pour le positionnement absolu des enfants */
+    width: 100%;
+    padding: 8rem;
+    gap: 1rem
+    ;
+}
+
+.content-top img {
+    max-width: 100%; /* Assurez-vous que l'image ne déborde pas */
+    height: auto; /* Garde le ratio de l'image */
+}
+
+.title-house {
+    width: 100%;
+}
+
+.title-house h2 {
+    color: #59434c;
+    font-size: 3rem;
+    margin: 0; /* Retire la marge */
+    position: absolute; /* Positionne le texte par rapport à son parent */
+    top: 8rem; /* Ajustez cette valeur pour le placement vertical */
+    right: 25rem; /* Ajustez cette valeur pour le placement horizontal */
+}
+
+.title-house .highlight {
+    position: absolute; /* Positionne le texte par rapport à son parent */
+    top: 12rem; /* Ajustez cette valeur pour le placement vertical sous h2 */
+    right: 23rem; /* Aligne le texte à droite */
+    font-family: "Style Script", cursive;
+    color: #df5e5e;
+    font-size: 2.5rem; /* Ajustez la taille de police si nécessaire */
+}
+
+/* Style pour l'image à droite */
+
+.image-right img {
+    margin-left: auto; /* Garde l'image à droite */
+    height: 10rem;
+    position: absolute;
+    margin-left: 10rem; /* Ajuste la marge gauche */
+    margin-top: -15rem; /* Change la valeur pour remonter l'image */
+}
+
+/* Ils nous ont fait confiance */
+
+.text-low h4 {
+    padding: 5rem;
+    margin-top: 20px; /* Ajuste l'espace entre le contenu et le texte en bas */
+    text-align: center; /* Centre le texte */
+    color: #de5e5e;
+    font-size: 2.5rem; 
+    margin-bottom: -5rem;
+}
+
+/* Confiance */
+
+.trust-cards {
+    display: flex;
+    background-color: #ffb345; 
+    width: 100%;
+    padding: 2rem; 
+}
+
+.slider-cards {
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: #ffb345; 
+    border: none;
+    gap: 1rem; 
+}
+
+.cards {
+    flex-direction: column;
+    background-color: #ffb345; 
+    padding: 1rem;
+    text-align: center;
+}
+
+    /* Conteneur de la bulle de conversation */
+.bubble-container {
+    background-color: #ffffff; /* Couleur de fond de la bulle */
+    color: #333;
+    padding: 1rem;
+    margin: auto;
+    max-width: 300px; /* Largeur maximum de la bulle */
+    border-radius: 20px; /* Arrondit les coins */
+    position: relative;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute un effet d'ombre */
+}
+
+/* Flèche de la bulle de conversation */
+.bubble-container::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; /* Positionne la flèche sous la bulle */
+    left: 20px; /* Ajuste la position horizontale de la flèche */
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent; /* Crée la flèche en triangle */
+}
+
+.under-bubble {
+    display: flex;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.under-bubble h3 {
+    padding: 0;
+    margin: 2rem 0 0 1rem;
+    font-size: x-large;
+}
+
+/* Texte de la carte */
+
+.text-card {
+    background-color: #ffffff; 
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Flèches du slider */
+.slider-cards .arrow {
+    font-size: 3em;
+    cursor: pointer;
+    color: #06a19d;
+    user-select: none;
+}
+
+.slider-cards .left-arrow {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-cards .right-arrow {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* On vous livre chez vous ! */
+
+.find-us {
+    display: flexbox;
+    justify-content: flex-start;
+    padding: 5rem;
+    position: relative;
+}
+
+.title-delivery {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 0 -3rem 0;
+}
+
+.title-delivery h2 {
+    font-size: 4rem;
+    margin-left: 15rem;
+    padding: 0;
+}
+
+.title-delivery .color-text {
+    position: absolute;
+    color: #06a19d;
+    font-family: "Style Script", cursive;
+    font-style: italic;
+    font-size: 4rem;
+    margin-left: 20rem;
+    padding: 40px;
+}
+
+/* Logos cie */
+
+.logo-cie {
+    display: flex;
+    position: absolute;
+    gap: 5rem; /* Espace entre les logos */
+    justify-content: center; /* Centre les logos dans le conteneur */
+    padding: 8rem;
+    margin-left: 10rem;
+}
+
+.delivery-cie-logo {
+    width: 100px; /* Largeur fixe pour les logos */
+    height: 100px; /* Hauteur fixe pour les logos */
+}
+
+.delivery-cie-logo img {
+    width: 100%; /* Ajuste l'image pour qu'elle remplisse la div */
+    height: 100%; /* Ajuste l'image pour qu'elle remplisse la div */
+    object-fit: contain; /* Garde les proportions de l'image */
+}
+
+.staff-logo {
+    position: relative;
+    margin-left: 35rem;
+    padding: 0rem;
+}
+
+.staff-logo img {
+    height: 18rem;
+}
+
+/* Bouton Où Commander... */
+
+.card-find-us {
+    padding: 10px 20px;
+    margin: 0 2rem ;
+    background-color: #df5e5e;
+    color: #fff8e5;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn .btn:hover {
+    background-color: #ffbb48;
+}
+
+/* Footer */
+footer {
+    background-color: #06a19d;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+footer p {
+    color: ghostwhite;
+    padding: 10px;
+}
+
+a.goTop{
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    right: 1,5rem;
+    background-color: #df5e5e;;
+    color: #06a19d;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px --18px;
+    transition: all 0.5s ease-in-out;
+}
+
+a.goTop:hover{
+    color: rgb(255, 251, 0);
+    opacity: 0.75;
+}
+
+/* Media Queries */
+
+@media  (width < 780px ) {
+
+    nav, .cards, .menu, .logo .content-top, .card, .find-us, .card-find-us {
+    flex-direction: column;
+    }
+
+/* header */
+    .logo {
+    margin-right: 5rem;
+    }
+
+    .menu li {
+    text-align: center;
+    margin: 0 1rem 5px 20rem;
+    }
+
+    .cta-buttons {
+    padding: 30px;
+    }
+    /* Main */
+
+    main h2 {
+        margin-left: 2rem;
+    }
+
+/* Masquer la deuxième et la troisième carte */
+    .slider-container .card:nth-child(2),
+    .slider-container .card:nth-child(3) {
+        display: none;
+    }
+    
+/* Réduire la taille de la première carte et ajuster le positionnement */
+    .slider-container .card {
+        flex: 0 0 70%; /* Réduit la carte à 70% de la largeur du conteneur */
+        margin: 0 auto; /* Centre la carte entre les flèches */
+    }
+
+/* Réduction de la taille des flèches pour une meilleure mise en page mobile */
+    .arrow {
+        font-size: 2em; /* Réduit la taille des flèches */
+    }
+
+/* Ajuster la position des flèches */
+    .left-arrow {
+        left: -1px; /* Ajuste la position à gauche pour mobile */
+    }
+    
+    .right-arrow {
+        right: -1px; /* Ajuste la position à droite pour mobile */
+    }
+
+    /* about */
+
+    .about {
+        height: auto;
+    }
+
+.text-content h2 {
+    margin: 0 0 1rem 3rem;
+}
+    
+.text-content article {
+    font-size: 12px;
+}
+
+.text-content .read-more {
+    padding: 1px;
+    margin: 0 5rem 2rem 8rem;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    margin: 3rem 2rem 1rem 0;
+}
+
+/* Discovery */
+
+.discovery {
+height: 400px;
+}
+
+.discover-card {
+height: 150px;
+
+}
+
+.content-top { 
+height: 475px;
+}
+
+.content-top img {
+
+}
+
+.textuel-content {
+
+}
+
+.textuel-content article {
+font-size: 12px;
+margin: -8rem 0 0 7rem;
+}
+
+.image-right {
+    
+}
+
+.image-right img {
+position: absolute;
+height: 4rem;
+margin-left: 12rem;
+margin-top: -5rem;
+}
+
+.title-house {
+
+}
+
+.title-house h2 {
+position: absolute;
+font-size: 1.75rem;
+top: 9rem;
+right: 6rem;
+}
+
+.title-house .highlight {
+position: absolute;
+font-size: 1.75rem;
+top: 11.5rem;
+right: 4.25rem;
+}
+
+.read-more-card {
+
+}
+
+/* Témoignage confiance */
+
+.trust-cards {
+
+}
+
+.slider-cards {
+    display: flex; /* Garde l'alignement flex */
+    justify-content: center; /* Centre les flèches et la carte */
+    align-items: center; /* Centre verticalement */
+}
+
+.cards {
+    display: none; /* Cache toutes les cartes par défaut */
+}
+
+.cards.active {
+    display: flex; /* Affiche uniquement la carte active */
+}
+
+.left-arrow, .right-arrow {
+    display: block; /* Assure que les flèches sont visibles */
+    cursor: pointer;
+    z-index: 1; /* Assure que les flèches sont au-dessus des cartes */
+}
+
+/* Find Us */
+
+.find-us {
+    position: relative;
+}
+
+.title-delivery {
+    position: relative;
+}
+
+.title-delivery h2 {
+    font-size: 2rem;
+    margin-left: 5px;
+
+}
+
+.title-delivery .color-text {
+    position: absolute;
+    font-style: italic;
+    font-size: 2rem;
+    margin: -2rem 1rem 0 3rem;
+}
+
+/* Logos Cie */
+
+.logo-cie {
+padding: 7rem;
+margin: 0 -7rem;
+gap: 2rem;
+}
+
+.delivery-cie-logo {
+    width: 50px;
+    height: 50px;
+
+}
+
+.delivery-cie-logo img {
+object-fit: contain;
+width: 100%;
+height: 100%;
+}
+
+.staff-logo {
+position: relative;
+margin-left: 15rem;
+padding: 1rem;
+}
+
+.staff-logo img {
+height: 10rem;
+}
+
+/* Bouton Où Commander... */
+
+.card-find-us {
+    padding: 2px 5px;
+    margin: 0 1rem ;
+}
+
+footer {
+    font-size: 12px;
+}
+
+}
+
+
+

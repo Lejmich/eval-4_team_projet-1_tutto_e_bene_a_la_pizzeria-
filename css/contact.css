@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+/* font-family: "Roboto", sans-serif; */
+
+/* font-family: "Josefin Sans", sans-serif; */
+
+/* font-family: "Style Script", cursive; */
+
+
+body{
+    background-color: #ffde8a;
+}
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Barre séparatrice grise centrée */
+.separator {
+    width: 100%; /* Largeur barre séparatrice par rapport au conteneur */
+    height: 5px;
+    background-color: #ffb147;
+}
+
+header {
+    background-color: #f8f9fa;
+    font-family: Inter, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #de5e5e;
+    padding:5px;
+    height: 5rem;
+}
+
+/* Logo à gauche */
+.logo img {
+    width: 100px; 
+    margin: 0.75rem 0 0 5rem;
+}   
+
+.menu {
+    flex-wrap: nowrap;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: ghostwhite;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: rgb(255, 251, 0);
+}
+
+/* Bouton "Nous contacter" */
+.cta-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 2rem ;
+    background-color: #fff8e5;
+    color: #df5e5e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #ffbb48;
+}
+
+/* Footer */
+footer {
+    background-color: #06a19d;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+footer p {
+    color: ghostwhite;
+    padding: 10px;
+}
+
+a.goTop{
+    display: block;
+    position: fixed;
+    bottom: 1rem;
+    right: 1,5rem;
+    background-color: #df5e5e;;
+    color: #06a19d;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px --18px;
+    transition: all 0.5s ease-in-out;
+}
+
+a.goTop:hover{
+    color: rgb(255, 251, 0);
+    opacity: 0.75;
+}
+
+/* main */
+
+.image-container{
+  background-image: url(../matériel/pexels-kampus-5920663.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  
+}
+.call-to-action{
+    margin:10px;
+    font-family: Inter;
+    text-align: center;
+    color: #ffb147;
+}
+.texte-jaune{
+    color: #df5e5e;
+}
+
+.horaires-ouverture {
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0 rgb(156, 171, 176);
+    font-family: Inter;
+    text-align: center; 
+    width: 80%; 
+    margin: 0 auto; /* Centre */
+    box-sizing: border-box; /* Padding ne dépasse pas la largeur*/
+}
+
+.horaires-ouverture p {
+    font-size: 1.2rem; 
+    margin-bottom: 1rem; 
+    text-align: center; 
+    padding: 0.5rem;
+}
+
+.jour-semaine {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    font-family: Birthstone, sans-serif;
+    color: #ffb147;
+    width: 800%;
+    font-size: 10rem;
+}
+.box-link-to{
+    margin: 60px;
+    border: transparent;
+    border-radius: 10px;
+    border-collapse: collapse;
+    display: flex;
+    gap: 10px;
+}
+.box-list{
+    
+    display: flex;
+    border: solid 1.5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1rem;
+    border-color: #de5e5e;
+    border-width: 2px;
+    cursor: pointer;
+    background-color: #ffb147;
+    font-family: birthstone;
+    font-size: 29px; 
+}
+
+.text-box{
+    text-align: center;
+    margin: 10px;
+    font-family: inter;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border:solid;
+    border-radius: 5px;
+    border-color: #de5e5e;
+    background-color: #ffb147;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: normal;
+    position: static;
+ 
+}
+
+.consumer-form {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 0 3rem 3rem;
+}
+
+.consumer-form iframe {
+    display: block; 
+    padding: 0.5rem; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    width: 30%; 
+    height: 400px; 
+    object-fit: cover; 
+}
+.consumer-form-title {
+    text-align: center;
+    border:solid;
+    border-radius: 5px;
+    border-color: #de5e5e;
+    background-color: #ffb147;
+    font-family: Inter;
+    font-size:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; 
+}
+
+.consumer-form-title h2 {
+margin: 10px;
+}
+
+.consumer-form-title p {
+    margin: 10px;
+}
+
+.consumer-form-title a {
+    text-decoration: none;
+}
+
+.logo img {
+
+    width: 80px; 
+    height: auto; 
+    object-fit: contain; /* Garde proportions de l'image sans déformer */
+    margin: 0 20px 0 20px; 
+}
+
+.consumer-form-title img {
+    width: 60%; 
+    height: auto; /* Garde la proportion du logo */
+    object-fit: contain;
+}
+
+/* Style des étiquettes (label) */
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style des champs de saisie */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style du champ de texte (textarea) */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Style bouton d'envoi */
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #de5e5e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Effet survol bouton */
+.contact-form button:hover {
+    background-color: #de5e5e;
+}
+
+
+/* Media query pour les mobiles */
+
+@media  (width < 780px ) {
+
+    nav, .cards, .menu, .logo, .box-link-to, .consumer-form {                                 
+    flex-direction: column;
+    }
+
+    nav {
+        height: 20rem;
+        text-align: center;
+        margin:0;
+        padding: 0 0 1rem 0;
+    }
+
+    .logo {
+        padding-top: 1rem;
+        margin-right: 5rem;
+    }
+
+    .horaires-ouverture {
+        width: 90%; 
+        padding: 1rem; 
+    }
+
+    .horaires-ouverture p {
+        font-size: 1rem; 
+        padding: 0.5rem;
+    }
+
+    .jour-semaine {
+        font-size: 1.2rem;
+    }
+
+    .consumer-form-title {
+        font-size: 12px; 
+        padding: 1rem; 
+        box-shadow: 0px 4px 8px 0 rgb(24, 29, 1);
+    }
+
+    .consumer-form-title img {
+        position: relative;
+        margin: -2rem 1.5rem 0 6.5rem;
+        padding: 10px;
+        width: 30%; 
+        object-fit: contain; /* Garde ratio logo */
+    }
+
+    .consumer-form iframe {
+        width: 90%; 
+        height: 300px;
+        padding: 0.5rem; 
+        margin: 20px 30px;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+        margin: 1rem 20% 0;
+    }
+}

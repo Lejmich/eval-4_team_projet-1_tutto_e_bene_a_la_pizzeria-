@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/logo/Logo-removebg-preview.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La carte</title>
+</head>
+<body>
+  <!-- Barre séparatrice -->
+  <div class="separator"></div>
+
+<!-- Header -->
+<header>
+
+    <nav>
+        <!-- Logo Pizzeria -->
+    <div class="logo"><img src="assets/logo/Logo-removebg-preview.png" alt="Logo Pizzeria"></div>
+
+    <ul class="menu">
+        <li><a href="index.html">Qui sommes-nous ?</a></li>
+        <li><a href="cards.html">Nos pizzas</a></li>
+        <li><a href="contact.html">Commander</a></li>
+    </ul>
+
+    <!-- boutons CTA  -->
+    <div class="cta-buttons">
+        <a href="contact.html" class="btn" aria-label="Contactez-nous">Nous contacter</a>
+    </div>
+
+</header>
+
+<main>
+<section>
+    <div class="tab">
+        <button class="tablinks" onclick="openMenu(event, 'NosPizzas')" id="defaultOpen">Nos Pizzas</button>
+        <button class="tablinks" onclick="openMenu(event, 'NosBoissons')">Nos Boissons</button>
+        <button class="tablinks" onclick="openMenu(event, 'NosMenus')">Nos Menus</button>
+    </div>
+
+      <div id="NosPizzas" class="grid">
+        <div class="Pizza">
+            <img src="matériel/pizza margarita.jpg" alt="Pizza Margarita" class="product-image">
+            <h2 class="product-title">Pizza margarita</h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/pizza-végétarienne.jpg" alt="Pizza Végétarienne" class="product-image">
+            <h2 class="product-title">Pizza Végétarienne</h2>
+            <p class="product-description">Pizza aux champignons, brocolis, oignons, fromage végétal.</p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/i87982-pizza-royale.jpg" alt="Pizza Royale" class="product-image">
+            <h2 class="product-title">Pizza </h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/pizza-3-fromages-Royan.jpg" alt="Pizza Trois-fromages" class="product-image">
+            <h2 class="product-title">Pizza </h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/pizza-norvegienne.jpg" alt="Pizza Norvégienne" class="product-image">
+            <h2 class="product-title">Pizza </h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/pizza-manhattan-123rf.jpg" alt="Pizza Manhattan" class="product-image">
+            <h2 class="product-title">Pizza </h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/pizza-chèvre-miel-(4).jpg.webp" alt="Pizza Chèvre-Miel" class="product-image">
+            <h2 class="product-title">Pizza </h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+        <div class="Pizza">
+            <img src="matériel/pizza moussaka.jpg" alt="Pizza Moussaka" class="product-image">
+            <h2 class="product-title">Pizza </h2>
+            <p class="product-description">Pizza </p>
+            <p class="product-price">29,99 €</p>
+            <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+        </div>
+ </div>
+
+<div id="NosBoissons" class="grid">
+    <div class="boissons">
+    <img src="matériel/boissons.png" alt="Boissons" class="product-image">
+    <h2 class="product-title">Boissons</h2>
+    <p class="product-description">Coca-Cola, Fanta, 7Up (Can 33cl/Bouteille)</p>
+    <p class="product-price">2,99/4,99 €</p>
+    <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+    </div>
+</div>
+
+<div id="NosMenus" class="grid">
+    <div class="menu-promo">
+    <img src="matériel/MENU PROMO.png" alt="Menu" class="product-image">
+    <h2 class="product-title">Menu Promo</h2>
+    <p class="product-description">Description du menu avec pizza + boisson.</p>
+    <p class="product-price">34,99 €</p>
+    <a href="acheter_produit1.html" class="buy-button">Acheter</a>
+</div>
+</div>
+</section>
+</main> 
+
+<footer>
+
+    <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a> | <a href="#">Conditions générales de vente</a></p>
+    <p>&copy; 2024 Chez Jonathan Pizzeria | Jordan & MCW | Tous droits réservés.</p>
+    
+<a href="#" class="goTop"><i class="fa-solid fa-chevron-up"></i></a>
+</footer>
+
+
+<script>
+    function openMenu(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("grid");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
