@@ -13,6 +13,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+.title{
+    font-family: Birthstone;
+    font-size: 150px;
+    text-align: center;
+    color: #df7315;
+    background-color: #ffde8a;
+}
 
 /* Barre séparatrice grise centrée */
 .separator {
@@ -95,7 +102,7 @@ img{
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #df7315;
+    background-color: #ffbb48;
   }
 
   .tab button {
@@ -108,10 +115,10 @@ img{
     transition: 0.3s;
   }
   .tab button:hover {
-    background-color: #ddd;
+    background-color: #ffedc9;
   }
   .tab button.active {
-    background-color: #ccc;
+    background-color: #ffedc9;
   }
   /* Bouton "Nous contacter" */
 .cta-buttons .btn {
